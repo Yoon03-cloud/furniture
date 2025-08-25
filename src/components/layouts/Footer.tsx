@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { siteConfig } from "../../config/site";
 import { Icons } from "../icons";
+import NewsLetterForm from "../../components/news-letter";
 
 function Footer() {
   return (
@@ -34,6 +35,10 @@ function Footer() {
                 </ul>
               </div>
             ))}
+          </section>
+          <section className="space-y-3">
+            <h4 className="font-medium">Subscribe to our newLetter</h4>
+            <NewsLetterForm />
           </section>
         </section>
       </div>
