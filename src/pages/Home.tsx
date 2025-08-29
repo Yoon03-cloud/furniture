@@ -2,9 +2,31 @@ import { Link } from "react-router-dom";
 import Couch from "../data/images/couch.png";
 import { Button } from "../components/ui/button";
 import CarouselCard from "../components/products/CarouselCard";
+import { products } from "../data/product";
+import BlogCard from "../components/blogs/BlogCard";
+import { posts } from "../data/posts";
+
+const samplePost = posts.slice(0, 3);
 function Home() {
+  const Title = ({
+    title,
+    href,
+    textSide,
+  }: {
+    title: string;
+    href: string;
+    textSide: string;
+  }) => (
+    <div className="flex flex-col md:flex-row lg:flex-row md:justify-between lg:justify-between mt-28 mb-10">
+      <h2 className="text-2xl font-bold mb-4 lg:my-0">{title}</h2>
+      <Link to={href} className="text-muted-foreground font-semibold underline">
+        {textSide}
+      </Link>
+    </div>
+  );
+
   return (
-    <div className=" container mx-auto text-2xl mt-16 lg:mt-4">
+    <div className=" container mx-auto text-2xl  lg:mt-4">
       <div className="flex flex-col lg:flex-row items-center lg:mb-12 lg:justify-between">
         {/* Text Section */}
         <div className="text-center lg:text-left my-8 lg:mb-8 lg:w-2/5 ">
@@ -34,7 +56,9 @@ function Home() {
         {/* image section */}
         <img src={Couch} alt="Couch" className="w-full lg:w-3/5 lg:mt-8" />
       </div>
-      <CarouselCard />
+      <CarouselCard products={products} />
+      <Title title="Recent Blog" href="/blogs" textSide="View All Post" />
+      <BlogCard posts={samplePost} />
     </div>
   );
 }
