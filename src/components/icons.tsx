@@ -4,6 +4,8 @@ import {
   PaperPlaneIcon,
   ExclamationTriangleIcon,
   ArrowLeftIcon,
+  LayersIcon,
+  PlusIcon,
 } from "@radix-ui/react-icons";
 export type IconProps = React.SVGProps<SVGSVGElement>;
 export const Icons = {
@@ -27,4 +29,6 @@ export const Icons = {
   paperPlane: PaperPlaneIcon,
   exclamation: ExclamationTriangleIcon,
   arrowLeft: ArrowLeftIcon,
+  Layer: LayersIcon,
+  plus: PlusIcon,
 };
