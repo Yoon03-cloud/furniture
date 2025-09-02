@@ -18,7 +18,7 @@ export type Product ={
     id: string,
     name: string,
     description:string,
-    images:[],
+    images:string[],
     categoryId: string,
     price: number,
     discount:number,

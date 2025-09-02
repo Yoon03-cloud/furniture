@@ -140,17 +140,5 @@ export const products = [
     inventory: 200,
     status: "active",
   },
-  {
-    id: "uuid9",
-    name: "Kruzo Aero Chair",
-    description:
-      "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quam ut purus rutrum lobortis",
-    images: [p5, p3, p8],
-    categoryId: "uuid1",
-    price: 250,
-    discount: 2600,
-    rating: 4,
-    inventory: 200,
-    status: "active",
-  },
+  
 ];
