@@ -140,5 +140,4 @@ export const products = [
     inventory: 200,
     status: "active",
   },
-  
 ];
