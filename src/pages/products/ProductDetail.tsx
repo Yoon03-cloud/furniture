@@ -16,6 +16,7 @@ import { formatPrice } from "../../lib/utils";
 import { products } from "../../data/product";
 import Rating from "../../components/products/Rating";
 import AddToFavourite from "./AddToFavourite";
+import AddToCartForm from "./AddToCartForm";
 
 function ProductDetail() {
   const { productId } = useParams();
@@ -70,8 +71,10 @@ function ProductDetail() {
             <AddToFavourite
               productId={String(product?.id)}
               rating={Number(product?.rating)}
+              isFavourite={false}
             />
           </div>
+          <AddToCartForm canBuy={product?.status === "active"} />
         </div>
       </section>
       <Separator className="mt-4 md:hidden" />
