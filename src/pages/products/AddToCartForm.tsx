@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -69,7 +68,7 @@ export default function AddToCartForm({ canBuy }: showBuyNowProps) {
                     inputMode="numeric"
                     min={0}
                     {...field}
-                    className="pr-12"
+                    className="h-8 w-16 rounded-none border-x-0"
                   />
                 </FormControl>
                 <FormMessage />
@@ -91,7 +90,7 @@ export default function AddToCartForm({ canBuy }: showBuyNowProps) {
             type="button"
             size="sm"
             aria-label="Buy now"
-            className={cn("w-full font-bold ", canBuy && "bg-slate-500")}
+            className={cn("w-full font-bold ", !canBuy && "bg-slate-400")}
           >
             Buy Now
           </Button>

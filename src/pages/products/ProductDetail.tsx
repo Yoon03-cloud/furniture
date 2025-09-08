@@ -17,6 +17,12 @@ import { products } from "../../data/product";
 import Rating from "../../components/products/Rating";
 import AddToFavourite from "./AddToFavourite";
 import AddToCartForm from "./AddToCartForm";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../../components/ui/accordion";
 
 function ProductDetail() {
   const { productId } = useParams();
@@ -75,6 +81,21 @@ function ProductDetail() {
             />
           </div>
           <AddToCartForm canBuy={product?.status === "active"} />
+          <Separator className="my-4" />
+          <Accordion
+            type="single"
+            collapsible
+            className="w-full"
+            defaultValue="item-1"
+          >
+            <AccordionItem value="item-1" className="border-none">
+              <AccordionTrigger>Description</AccordionTrigger>
+              <AccordionContent>
+                {product?.description ??
+                  "There is no description for this product."}
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
       <Separator className="mt-4 md:hidden" />
