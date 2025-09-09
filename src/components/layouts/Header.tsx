@@ -4,6 +4,7 @@ import MobileNavigation from "./MobileNavigation";
 import AuthDropDown from "./AuthDropDown";
 import { ModeToggle } from "../mode-toogle";
 import { User } from "../../data/user";
+import CartSheet from "./CartSheet";
 function Header() {
   return (
     <header className="w-full border-b fixed top-0 z-50 bg-background">
@@ -12,6 +13,7 @@ function Header() {
         <MobileNavigation items={siteConfig.mainNav} />
         <div className="flex flex-1 item-center justify-end space-x-4 lg:mr-0 mr-8">
           <ModeToggle />
+          <CartSheet />
           <AuthDropDown user={User} />
         </div>
       </nav>

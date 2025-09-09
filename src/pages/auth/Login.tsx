@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import banner from "../../data/images/house.webp";
 import { Icons } from "../../components/icons";
-import { LoginForm } from "../../components/auth/login-form";
+import { LoginForm } from "../../components/login-form";
 
 function login() {
   return (
