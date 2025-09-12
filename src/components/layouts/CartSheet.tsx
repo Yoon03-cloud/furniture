@@ -10,7 +10,6 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
   SheetFooter,
   SheetHeader,
   SheetTitle,
@@ -52,7 +51,7 @@ export default function CartSheet() {
             <ScrollArea className="my-4 h-[68vh] pb-8">
               <div className="">
                 {cartItems.map((cart) => (
-                  <CartItem />
+                  <CartItem cart={cart} />
                 ))}
               </div>
             </ScrollArea>
