@@ -67,7 +67,7 @@ export default function NewsLetterForm() {
                 ) : (
                   <Icons.paperPlane className="size-3 aria-hidden:true " />
                 )}
-                <span className="sr-only">Join newsLetter</span>
+                <span className="sr-only">Join newsLetter </span>
               </Button>
               <FormMessage />
             </FormItem>

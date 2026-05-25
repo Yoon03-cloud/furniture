@@ -13,7 +13,7 @@ export function LoginForm({
       <div className="flex flex-col gap-2 ">
         <h1 className="text-2xl items-center font-bold">Login </h1>
         <p className=" text-sm text-muted-foreground ">
-          Enter your email below to login to your account
+          Enter your email to login to your account
         </p>
       </div>
       <div className="grid gap-6">

@@ -19,7 +19,7 @@ interface ProductProps {
 
 export default function CarouselCard({ products }: ProductProps) {
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: true }),
   );
 
   return (
@@ -45,7 +45,7 @@ export default function CarouselCard({ products }: ProductProps) {
                   className="text-sm font-semibold text-own hover:underline"
                 >
                   {" "}
-                  Read More
+                  Read More...
                 </Link>
               </div>
             </div>

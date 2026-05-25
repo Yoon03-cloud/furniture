@@ -51,7 +51,7 @@ function Home() {
               variant="outline"
               className="font-semibold rounded-full text-black px-6 py-6 text-base "
             >
-              <Link to="#">Explore</Link>
+              <Link to="#">Explore More</Link>
             </Button>
           </div>
         </div>

@@ -26,7 +26,7 @@ function error() {
               />
             </div>
 
-            <CardTitle className="text-center">Opps! </CardTitle>
+            <CardTitle className="text-center">Sorry! </CardTitle>
             <CardDescription className="text-center">
               An error occurs accidently.
             </CardDescription>
